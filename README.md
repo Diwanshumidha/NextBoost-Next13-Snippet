@@ -8,7 +8,8 @@ This Visual Studio Code extension provides a collection of helpful code snippets
 | Snippet Name | Prefix   | Description |
 | ------------ | -------- | ----------- |
 | Next Server Component | `snfc` or `server` | Creates a Next.js functional component with JSX. |
-| Next Client Component | `cnfc` or `client` | Creates a Next.js class component with JSX. |
+| Next Client Component | `cnfc` or `client` | Creates a Next.js Client component with JSX. |
+| Use Client Tag | `uc` | Creates a Next.js use client  with JSX. |
 | Next.js API Route GET Method | `!get` | Creates a Next.js API route GET method. |
 | Next.js API Route POST Method | `!post` | Creates a Next.js API route POST method. |
 | Next.js API Route PUT Method | `!put` | Creates a Next.js API route PUT method. |

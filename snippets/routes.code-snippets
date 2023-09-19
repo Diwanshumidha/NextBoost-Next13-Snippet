@@ -68,4 +68,11 @@
         ],
         "description": "Create a Next.js API Route Code"
     },
+    "Next.js Use Client":{
+        "prefix":"uc",
+        "body":[
+            "'use client'"
+        ],
+        "description":"Create A Use Client tag"
+    }
 }
