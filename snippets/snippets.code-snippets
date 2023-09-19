@@ -1,0 +1,100 @@
+{
+  "Server Next.js Functional Component": {
+    "prefix": ["nfc", "snfc", "server","page"],
+    "body": [
+      "const ${1:Page} = () => {",
+      "    return (",
+      "        <div>${1:Page}</div>",
+      "    );",
+      "}",
+      "",
+      "export default ${1:Page};"
+    ],
+    "description": "Create a Server Next.js functional component with JSX"
+  },
+  "Client Next.js Functional Component": {
+    "prefix": ["cnfc", "client"],
+    "body": [
+      "'use client'",
+      "",
+      "const ${1:Page} = () => {",
+      "    return (",
+      "        <div>",
+      "           ${1:Page}${2: }"
+      "        </div>",
+      "    );",
+      "}",
+      "",
+      "export default ${1:Page};"
+    ],
+    "description": "Create a Client Next.js functional component with JSX"
+  },
+  "Layout Next.Js": {
+    "prefix": ["lnfc", "layout"],
+    "body": [
+      "export default function ${1:NewLayout}({ children }) {",
+      "  return (",
+      "    <>",
+      "      <${2:div}>{children}</${2:div}>",
+      "    </>",
+      "  )",
+      "}"
+    ],
+    "description": "Create a Next.js Layout component with JSX"
+  },
+  "Next Error Component": {
+    "prefix": ["nec", "err"],
+    "body": [
+      "'use client'",
+      "",
+      "import { useEffect } from 'react'",
+      "",
+      "export default function Error({ error, reset }) {",
+      "  useEffect(() => {",
+      "    console.error(error)",
+      "  }, [error])",
+      "",
+      "  return (",
+      "    <div>",
+      "      <h2>Something went wrong!</h2>",
+      "      <button",
+      "        onClick={",
+      "          () => reset()",
+      "        }",
+      "      >",
+      "        Try again",
+      "      </button>",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Create a React error component"
+  },
+  "Next.js Middleware and Config": {
+    "prefix": ["!middleware", "mnfc"],
+    "body": [
+      "import { NextResponse } from 'next/server'",
+      "",
+      "// This function can be marked `async` if using `await` inside",
+      "export function middleware(request) {",
+        "${2: }",
+      "}",
+      "",
+      "// See 'Matching Paths' below to learn more",
+      "export const config = {",
+      "  matcher: ${1:'/about/:path*'}",
+      "}"
+    ],
+    "description": "Create a Next.js middleware function and config"
+  },
+  "Next.js Server Action": {
+    "prefix": ["sa", "action"],
+    "body": [
+      "async function ${1:Action}(formData) {",
+      "    'use server'",
+      "   ${2: } ",
+      "}"
+    ],
+    "description": "Create an Server Action in Next.js"
+  }
+}

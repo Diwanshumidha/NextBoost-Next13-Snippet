@@ -1,0 +1,71 @@
+{
+    "Next.js API Route GET Method": {
+        "prefix": ["nextget","!get","grnfc"],
+        "body": [
+            "",
+            "export async function GET() {",
+            "    return NextResponse.json({ message: 'Hello World' }, { status: 200 })",
+            "}"
+        ],
+        "description": "Create a Next.js API route GET method"
+    },
+    "Next.js API Route Post Method": {
+        "prefix": ["nextpost","!post","prnfc"],
+        "body": [
+            "",
+            "export async function POST() {",
+            "    return NextResponse.json({ message: 'Hello World' }, { status: 200 })",
+            "}"
+        ],
+        "description": "Create a Next.js API route POST method"
+    },
+    "Next.js API Route DELETE Method": {
+        "prefix": ["nextdelete","!delete","drnfc"],
+        "body": [
+            "",
+            "export async function DELETE(req,{params}) {",
+            "    return NextResponse.json({ message: 'Hello World' }, { status: 200 })",
+            "}"
+        ],
+        "description": "Create a Next.js API route DELETE method"
+    },
+    "Next.js API Route PUT Method": {
+        "prefix": ["nextput","!put","prnfc"],
+        "body": [
+            "",
+            "export async function PUT(req,{params}) {",
+            "    return NextResponse.json({ message: 'Hello World' }, { status: 200 })",
+            "}"
+        ],
+        "description": "Create a Next.js API route PUT method"
+    },
+    "Next.js API Route PATCH Method": {
+        "prefix": ["nextpatch","!patch","parnfc"],
+        "body": [
+            "",
+            "export async function PATCH(req,{params}) {",
+            "    return NextResponse.json({ message: 'Hello World' }, { status: 200 })",
+            "}"
+        ],
+        "description": "Create a Next.js API route PATCH method"
+    },
+    "Next.js API NextRes IMPORT Method": {
+        "prefix": ["resimport","!res","routeimport"],
+        "body": [
+            "import { NextResponse } from 'next/server'",           
+        ],
+        "description": "Create a Next.js API NextResponse Import method"
+    },
+    "Next.js API Route CUSTOM Method": {
+        "prefix": ["route","rnfc"],
+        "body": [
+            "import { NextResponse } from 'next/server'",
+            "",
+            "export async function ${1:GET}(${2: }) {",
+            "",
+            "    return NextResponse.json({ message: 'Hello World' }, { status: 200 })",
+            "}"
+        ],
+        "description": "Create a Next.js API Route Code"
+    },
+}
