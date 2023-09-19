@@ -3,7 +3,7 @@
   "displayName": "Next 13 NextBoost Snippet",
   "description": "Extension is a collection of helpful Next13 snippets designed to enhance your coding experience in Visual Studio Code. Whether you're working with Next.js, React, or generic JavaScript/TypeScript projects, these snippets provide templates for common code structures, saving you time and effort during development.",
   "publisher": "diwanshumidha",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -42,11 +42,19 @@
     "snippets": [
       {
         "language": "javascriptreact",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/javaScript/snippets.code-snippets"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/routes.code-snippets"
+        "path": "./snippets/javaScript/routes.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescript/routes.code-snippets"
       }
     ]
   },
